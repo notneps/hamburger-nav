@@ -1,0 +1,19 @@
+html {
+    max-width: 1024px;
+    margin: auto;
+    font-family:'Times New Roman', Times, serif;
+}
+
+body {
+    margin: auto;
+}
+
+main {
+    margin: auto;
+}
+
+img {
+    max-width: 100%;
+    margin: 15px auto;
+    padding: 15px;
+}

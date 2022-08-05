@@ -1,0 +1,105 @@
+/* nav */
+
+/* hamburger icon */
+.nav-toggle {
+    padding: 10px;
+    font-size: 20px;
+    margin-left: auto;
+    margin-right: 15px;
+    border-style: none;
+    font-weight: bold;
+    border-radius: 15px;
+    transition: 0.5s;
+}
+
+.nav-toggle:hover {
+    background-color: var(--liberty);
+    color: var(--cultured);
+}
+
+nav {
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.navigation {
+    list-style: none;
+    padding: 0;
+}
+
+.navigation li {
+    font-size: 22px;
+    font-weight: 400;
+    display: none; /* hidden by default */
+}
+
+.navigation a {
+    display: block;
+    padding: 0.7rem;
+    text-align: left;
+    text-decoration: none;
+    color: var(--cultured);
+}
+
+.navigation a.active {
+    color: white;
+    background-color: black;
+}
+
+.navigation a:hover {
+    color: red;
+    background-color: #333333;
+}
+/*
+.visible nav {
+    max-width: 32em;
+}*/
+
+.visible li {
+    display: block;
+}
+
+/* header */
+
+#header-content {
+    margin: auto;
+    color: var(--cultured);
+    background-color: var(--liberty);
+}
+
+header a:visited {
+	color: var(--almost-white);
+}
+
+.compact-header {
+	display: flex;
+	align-items: center;
+}
+
+ul.navigation {
+    margin: 0px;
+}
+
+/* FULL VIEW */
+
+@media only screen and (min-width: 640px) {
+
+.nav-toggle {
+    display: none;
+}
+
+.navigation {
+    display: flex;
+}
+.navigation li {
+    display: block; /* change state in small view */
+    flex: 1 1 auto;
+}
+.navigation a {
+    text-align: center;
+}
+
+}
+
+
